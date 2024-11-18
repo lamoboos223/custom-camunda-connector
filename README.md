@@ -98,3 +98,29 @@ However, the generator provides a convenient way to create the template and keep
 and empowers you to prototype and iterate quickly.
 
 The generated element template can be found in [element-templates/template-connector.json](./element-templates/template-connector.json).
+
+
+## Deploy the connector
+
+```bash
+mvn clean package
+```
+
+copy the jar file to the camund8run/custom_connectors folder
+
+## Usage
+
+you can run the process with a json like this:
+
+```json
+{
+  "message": "Hello World",
+  "authentication": {
+    "username": "alice",
+    "token": "my-secret-token"
+  }
+}
+```
+---
+
+make sure the `./camunda/element-templates/template-connector.json` is in the same folder as the `.bpmn` file.
