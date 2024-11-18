@@ -124,3 +124,7 @@ you can run the process with a json like this:
 ---
 
 make sure the `./camunda/element-templates/template-connector.json` is in the same folder as the `.bpmn` file.
+
+## camunda 8 Run
+
+https://github.com/camunda/camunda/releases/tag/8.6.5
